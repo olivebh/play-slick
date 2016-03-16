@@ -1,0 +1,17 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# addresses
+GET      /addresses       controllers.AddressController.findAll
+GET      /addresses/:id   controllers.AddressController.findById(id: Int)
+POST     /addresses       controllers.AddressController.create
+PUT      /addresses/:id   controllers.AddressController.update(id: Int)
+DELETE   /addresses/:id   controllers.AddressController.delete(id: Int)
+
+# persons
+GET      /persons         controllers.PersonController.findAll
+GET      /persons/:id     controllers.PersonController.findById(id: Int)
+POST     /persons         controllers.PersonController.create
+PUT      /persons/:id     controllers.PersonController.update(id: Int)
+DELETE   /persons/:id     controllers.PersonController.delete(id: Int)
